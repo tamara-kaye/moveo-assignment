@@ -1,0 +1,5 @@
+# Google bucket
+.terraform/
+*.pem  
+terraform.tfvars
+*.tfstate*
