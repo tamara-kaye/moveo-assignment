@@ -103,6 +103,11 @@ The instance is accessible via an Application Load Balancer (ALB) in public subn
   When we search on the internet we get:  
   ![alt text](<final solution-1.jpeg>)
 
+
+## Process Diagram:
+
+![alt text](<Process Diagram-1.png>)
+
 ## Cleanup
 
 To remove all resources created by this Terraform configuration, run:
