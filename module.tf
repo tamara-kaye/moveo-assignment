@@ -13,14 +13,14 @@ provider "aws" {
   secret_key = var.aws_secret_key
 }
 
-# Data: Get latest Amazon Linux 2 AMI
+# Data: Get latest Ubuntu AMI
 data "aws_ami" "aws_ubuntu" {
   most_recent = true
-  owners      = ["amazon"]
+  owners      = ["099720109477"] # Canonical's AWS account ID for Ubuntu AMIs
 
   filter {
     name   = "name"
-    values = ["amzn2-ami-hvm*"]
+    values = ["ubuntu/images/hvm-ssd/ubuntu-*-amd64-server-*"]
   }
 
   filter {
