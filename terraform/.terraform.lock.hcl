@@ -1,4 +1,5 @@
 # This file is maintained automatically by "terraform init".
+# Downloads the required providers and locks their versions.
 # Manual edits may be lost in future updates.
 
 provider "registry.terraform.io/hashicorp/aws" {
