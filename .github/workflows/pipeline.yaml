@@ -52,7 +52,7 @@ jobs:
   create-aws-infra-terraform:
     name: Create AWS infrastructure with Terraform
     runs-on: ubuntu-latest
-    needs: build-and-push-docker-ecr
+    needs: build-and-push-docker-image-ecr
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
