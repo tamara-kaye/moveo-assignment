@@ -69,4 +69,3 @@ jobs:
           ECR_TAG: ${{ github.repository }}
         working-directory: ./terraform
         run: terraform apply -auto-approve -var "image_tag=${IMAGE_TAG}" -var "ECR_TAG=${ECR_TAG,,}"
-  
