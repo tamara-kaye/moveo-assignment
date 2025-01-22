@@ -2,12 +2,6 @@ name: CI/CD
 run-name: ${{ github.actor }} is running GitHub Actions
 permissions:
   id-token: write  # for AWS assume role(ECR push)
-on:
-  workflow_dispatch: # Triggered manually, won't run unless you start it explicitly
-    inputs:
-      mock:
-        description: "Mock input"
-        required: false
 jobs:
   validate:
     name: validate
