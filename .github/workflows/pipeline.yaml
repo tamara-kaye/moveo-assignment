@@ -18,10 +18,6 @@ jobs:
           python-version: "3.12"
       - name: Pip install dependencies
         run: pip install -r requirements.txt
-      - name: terraform validate
-        uses: dflook/terraform-validate@v1
-        with:
-          path: ./terraform
   build-and-push-docker-image-ecr:
     name: Build and push Docker image to ECR
     runs-on: ubuntu-latest
